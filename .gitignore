@@ -1,0 +1,12 @@
+# VSCode Settings
+.vscode/
+
+# Build Directories
+**/build/
+
+# Generated GResource
+resources.c
+
+# Temp Files
+*.swp
+.~

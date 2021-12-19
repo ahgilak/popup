@@ -1,0 +1,18 @@
+window {
+  border-radius: 12px;
+  min-width: 320px;
+}
+
+.root-box {
+  padding: 24px 12px 12px;
+  border-spacing: 12px;
+}
+
+.button-box {
+  margin-top: 16px;
+  border-spacing: 8px;
+}
+
+button {
+  min-width: 32px;
+}
