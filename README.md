@@ -5,10 +5,9 @@ GUI for javascript standard popup's in [deno](https://deno.land/).
 ### Example
 
 ```typescript
-import { alert, prompt } from "https://deno.land/x/popup/mod.ts";
+import { prompt } from "https://deno.land/x/popup/mod.ts";
 
-const name = prompt("What's your name?");
-alert(`Hello ${name}!`);
+prompt("Are you feeling lucky?", "sure");
 ```
 
 ### Overwrite Global Functions
