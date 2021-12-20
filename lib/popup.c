@@ -3,7 +3,7 @@
 
 #include "resources.h"
 
-GMainLoop *loop;
+static GMainLoop *loop;
 
 static void destroy(GtkDialog *dialog)
 {
@@ -11,7 +11,7 @@ static void destroy(GtkDialog *dialog)
     g_main_loop_quit(loop);
 }
 
-GLogWriterOutput log_black_hole(
+static GLogWriterOutput log_black_hole(
     GLogLevelFlags log_level,
     const GLogField *fields,
     gsize n_fields,
