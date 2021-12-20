@@ -2,7 +2,7 @@
 
 GUI for javascript standard popup's in [deno](https://deno.land/).
 
-### Example
+## Example
 
 ```typescript
 import { prompt } from "https://deno.land/x/popup/mod.ts";
@@ -14,7 +14,7 @@ result will look like this:
 
 ![](./img/screenshot.png)
 
-### Overwrite Global Functions
+## Overwrite Global Functions
 
 ```typescript
 import { alert, confirm, prompt } from "https://deno.land/x/popup/mod.ts";
@@ -24,10 +24,10 @@ window.prompt = prompt;
 window.confirm = confirm;
 ```
 
-### Dependencies
+## Dependencies
 
     gtk4
 
-### TODO
+## TODO
 
 - [ ] Add windows and macOS builds
