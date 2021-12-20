@@ -10,6 +10,10 @@ import { prompt } from "https://deno.land/x/popup/mod.ts";
 prompt("Are you feeling lucky?", "sure");
 ```
 
+result will look like this:
+
+![](./img/screenshot.png)
+
 ### Overwrite Global Functions
 
 ```typescript
