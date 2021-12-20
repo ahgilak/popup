@@ -67,7 +67,7 @@ static void confirm_callback(GtkDialog *dialog,
     destroy(dialog);
 }
 
-gint confirm(gchar *message)
+gboolean confirm(gchar *message)
 {
     gboolean result;
 
