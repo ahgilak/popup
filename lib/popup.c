@@ -11,11 +11,7 @@ static void destroy(GtkDialog *dialog)
     g_main_loop_quit(loop);
 }
 
-static GLogWriterOutput log_black_hole(
-    GLogLevelFlags log_level,
-    const GLogField *fields,
-    gsize n_fields,
-    gpointer user_data)
+static GLogWriterOutput log_black_hole()
 {
     return G_LOG_WRITER_HANDLED;
 }
