@@ -1,4 +1,4 @@
-# Popup (WIP)
+# Popup
 
 GUI for javascript standard popup's in [deno](https://deno.land/).
 
