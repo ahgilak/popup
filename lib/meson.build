@@ -3,6 +3,7 @@ project('popup', 'c',
     meson_version: '>= 0.50.0',
   default_options: [ 'warning_level=2',
                      'c_std=gnu11',
+                     'buildtype=release',
                    ],
 )
 
@@ -22,8 +23,12 @@ gnome = import('gnome')
 
 popup_sources += gnome.compile_resources('popup-resources',
   'popup.gresource.xml',
-   c_name: 'popup'
+  c_name: 'popup',
 )
+
+if get_option('buildtype') == 'debug'
+  add_project_arguments('-DDEBUG', language : ['c'])
+endif
 
 popup_lib = shared_library('popup',
   popup_sources,
