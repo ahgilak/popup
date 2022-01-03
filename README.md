@@ -12,7 +12,7 @@ prompt("Are you feeling lucky?", "sure");
 
 result will look like this:
 
-![](./img/screenshot.png)
+![screenshot](./img/screenshot.png)
 
 ## Overwrite Global Functions
 
@@ -24,10 +24,13 @@ window.prompt = prompt;
 window.confirm = confirm;
 ```
 
-## Dependencies
+## Prerequisites
 
-    gtk4
+### Linux
 
-## TODO
+- package `gtk4` should be installed.
 
-- [ ] Add windows and macOS builds
+### Windows
+
+- Install `MinGW` and `mingw-w64-x86_64-gtk4`.
+- Add `C:\msys64\mingw64\bin` to path.
