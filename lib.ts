@@ -12,7 +12,7 @@ function suffix() {
 }
 
 const lib = await cache(
-  "https://github.com/ahgilak/popup/releases/latest/download/popup" + suffix(),
+  "https://github.com/ahgilak/popup/releases/latest/download/libpopup" + suffix(),
 );
 
 export default lib.path;
