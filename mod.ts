@@ -1,1 +1,1 @@
-export * from "./popup.ts";
+export * from "./popup.js";
