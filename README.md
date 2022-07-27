@@ -4,10 +4,14 @@ GUI for javascript standard popup's in [deno](https://deno.land/).
 
 ## Example
 
-```typescript
-import { prompt } from "https://deno.land/x/popup/mod.ts";
+```javascript
+import { alert, confirm } from "https://deno.land/x/popup/mod.ts";
 
-prompt("Are you feeling lucky?", "sure");
+if (confirm("Press a button!") == true) {
+  alert("You pressed OK!");
+} else {
+  alert("You canceled!");
+}
 ```
 
 ## Prerequisites
