@@ -1,4 +1,4 @@
-import * as gi from "https://deno.land/x/deno_gi@v0.0.1/mod.js";
+import * as gi from "https://deno.land/x/deno_gi@v0.2.0/mod.js";
 
 const Gtk = gi.require("Gtk", "4.0");
 const GLib = gi.require("GLib", "2.0");
